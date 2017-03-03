@@ -2,26 +2,27 @@
 language: php
 
 php:
- - 5.5
+  - 5.5
 
 matrix:
- include:
-   - php: 5.6
-     env:
-       # AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
-       - ARTIFACT_S3_BUCKET=BBBB1
-       - ARTIFACT_S3_KEY=CCCC1
-       - STACK_ID=DDDD1
-       - APP_ID=EEEE1
-   - php: 5.6
-     env:
-       # AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
-       - ARTIFACT_S3_BUCKET=BBBB2
-       - ARTIFACT_S3_KEY=CCCC2
-       - STACK_ID=DDDD2
-       - APP_ID=EEEE2
-  exclude:
-   - php: 5.5
+  include:
+    - php: 5.6
+      env:
+        # AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+        - ARTIFACT_S3_BUCKET=BBBB1
+        - ARTIFACT_S3_KEY=CCCC1
+        - STACK_ID=DDDD1
+        - APP_ID=EEEE1
+    - php: 5.6
+      env:
+        # AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+        - ARTIFACT_S3_BUCKET=BBBB2
+        - ARTIFACT_S3_KEY=CCCC2
+        - STACK_ID=DDDD2
+        - APP_ID=EEEE2
+   exclude:
+    - php: 5.5
+
 build:
   ci:
     - printenv
