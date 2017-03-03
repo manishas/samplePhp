@@ -9,7 +9,6 @@ matrix:
    - php: 5.6
      env:
        # AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
-       - secure: AAAA1
        - ARTIFACT_S3_BUCKET=BBBB1
        - ARTIFACT_S3_KEY=CCCC1
        - STACK_ID=DDDD1
@@ -17,7 +16,6 @@ matrix:
    - php: 5.6
      env:
        # AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
-       - secure: AAAA2
        - ARTIFACT_S3_BUCKET=BBBB2
        - ARTIFACT_S3_KEY=CCCC2
        - STACK_ID=DDDD2
